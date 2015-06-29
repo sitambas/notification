@@ -1,0 +1,27 @@
+body{padding: 0px;margin: 0px;}
+/* notification circle animation */
+.animating{animation: animate 1s cubic-bezier(1,0,0,1);}
+@keyframes animate{from { transform: scale(1); }to { transform: scale(1.7);}}
+/* pop and header css */
+.header-bar {padding: 6px 13px;width: 200px;margin: auto;  position: relative;  font-family: arial;  margin-top: 9px;}
+.notification {width: 20%;margin: auto;  cursor: pointer}
+.notification-wrapper { display: none; position: absolute; top: 32px; opacity: 0; width: 267px; left: 0; background-color: #fff; border: 0px solid #d3d7db; border-radius: 5px; }
+.head-noti .number { font-size: 12px; background-color: #24b8b8; color: #fff; width: 20px; height: 20px; display: inline-block; line-height: 21px; border-radius: 50%; }
+.head-noti { font-size: 16px; text-transform: capitalize; font-family: arial; text-align: center; font-weight: bold; letter-spacing: 1px; color: #737e8a; margin: 20px 0px; }
+.face-noti {width: 30px;height: 30px;display: inline-block;}
+.notify-con {width: 177px;display: inline-block;}
+.face-noti {width: 30px;height: 30px;display: inline-block;border-radius: 50%;}
+.notify-con {width: 177px;display: inline-block;font-size: 13px;margin-left: 9px;vertical-align: top;color: #a1abb5;}
+.row-noti {padding: 20px 20px 16px 20px;background-color: #e9eff2;  border-bottom: 1px solid #C2D0DB; position: relative;}
+.notify-con span.name {color: #737e8a;font-weight: bold;}
+.bell_number { background-color: #24b8b8; color: #fff; width: 14px; height: 14px; display: inline-block; border-radius: 50%; top: -16px; position: relative; text-align: center; font-size: 9px; line-height: 14px; left: -12px; }
+.clear-all {padding: 10px;font-size: 13px;text-align: center;background-color: #C2D0DB; cursor: pointer;top: 0px;position: relative;}
+.face-noti img {border-radius: 50%;}
+.row-noti:hover {background-color: #F2F5F7; cursor: pointer;}
+.notification-struct{ display: none;}
+.append-con {overflow: hidden;}
+/*arrow box*/
+.notification-wrapper:after, .notification-wrapper:before {bottom: 100%;left: 50%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;}
+.notification-wrapper:before { border-color: rgba(194, 225, 245, 0); border-bottom-color: #fff; border-width: 9px; margin-left: -39px; }
+/* for background */
+.bg {background-color: #263c52;width: 100%;height: 550px;}
